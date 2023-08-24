@@ -1,0 +1,15 @@
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+    background-color: aqua;
+    grid-row: 1/3;
+}
+
+.main-section {
+    background-color: gray;
+}
