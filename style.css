@@ -5,11 +5,111 @@
     grid-template-rows: 1fr 5fr;
 }
 
+/* Sidebar */
+
 .sidebar {
-    background-color: aqua;
+    background-color: #0ea5e9;
     grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 1fr 4fr 6fr;
+    color: white;
+    font-size: 1.5rem;
+    gap: 2rem;
+    font-weight: 700;
+}
+
+.sidebar > .title {
+    font-size: 2rem;
+    align-self: center;
+    
+}
+
+.sidebar > .title,
+.navigation > div,
+.settings > div {
+    display: grid;
+    grid-template-columns: 58px 1fr;
+    align-items: center;
+    padding: 0 1rem 0 0.5rem;
+}
+
+.navigation > div,
+.settings > div {
+    margin-bottom: 1rem;
+}
+
+.sidebar span {
+    justify-self: center;
 }
 
 .main-section {
     background-color: gray;
+}
+
+/* Icons */
+
+.sidebar .dashboard-icon {
+    background-image: url("img/icons/view-dashboard.svg");
+    width: 3rem;
+    height: 3rem;
+}
+
+.sidebar .home-icon {
+    background-image: url("img/icons/home.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sidebar .home-icon {
+    background-image: url("img/icons/home.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sidebar .profile-icon {
+    background-image: url("img/icons/card-account-details.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sidebar .message-icon {
+    background-image: url("img/icons/message.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sidebar .history-icon {
+    background-image: url("img/icons/history.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sidebar .task-icon {
+    background-image: url("img/icons/calendar-check.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sidebar .community-icon {
+    background-image: url("img/icons/account-group.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sidebar .settings-icon {
+    background-image: url("img/icons/cog.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sidebar .support-icon {
+    background-image: url("img/icons/face-agent.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sidebar .privacy-icon {
+    background-image: url("img/icons/shield-check.svg");
+    width: 1.5rem;
+    height: 1.5rem;
 }
