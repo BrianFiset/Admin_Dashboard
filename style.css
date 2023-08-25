@@ -175,6 +175,10 @@ body {
     border-left: solid 8px #fbbf24;
 }
 
+.projects  .text{
+    color: gray;
+}
+
 .icons {
     place-self: end;
 }
