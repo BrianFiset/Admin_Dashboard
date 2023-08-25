@@ -1,9 +1,96 @@
 .container {
-    min-height: 100vh;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 1.7fr ;
+}
+
+.header > .top {
+    display: grid;
+    grid-template-columns: auto 5fr auto auto auto;
+    padding: 1rem 50px 0 50px;
+    gap: 1.5rem;
+    place-items: center;
+}
+
+.search-bar {
+    height: 2rem;
+    width: max(80%, 15rem);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    justify-self: stretch;
+    border: none;
+    background-color: #e2e8f0;
+}
+
+.header > .top > .profile-pic {
+    background-color: #0ea5e9;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.top > .account {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.header > .bottom {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    padding: 0 50px 0 50px;
+    gap: 2rem;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.bottom > .profile-pic {
+    background-color: #0ea5e9;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+.bottom > button {
+    color: white;
+    border: none;
+    background-color: #0ea5e9;
+    height: 2.5rem;
+    width: 7rem;
+    border-radius: 2rem;
+}
+
+.greetings {
+    display: grid;
+    align-items: center;
+}
+
+.greetings > .text {
+    font-weight: 700;
+}
+
+.greetings > .account {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Main Section */
+.main-section {
+    background-color: #e2e8f0;
+}
+
 
 /* Sidebar */
 
@@ -30,7 +117,7 @@
     display: grid;
     grid-template-columns: 58px 1fr;
     align-items: center;
-    padding: 0 1rem 0 0.5rem;
+    padding: 0 1rem 0 1rem;
 }
 
 .navigation > div,
@@ -42,74 +129,82 @@
     justify-self: center;
 }
 
-.main-section {
-    background-color: gray;
-}
-
 /* Icons */
 
-.sidebar .dashboard-icon {
+.dashboard-icon {
     background-image: url("img/icons/view-dashboard.svg");
     width: 3rem;
     height: 3rem;
 }
 
-.sidebar .home-icon {
+.home-icon {
     background-image: url("img/icons/home.svg");
     width: 1.5rem;
     height: 1.5rem;
 }
 
-.sidebar .home-icon {
+.home-icon {
     background-image: url("img/icons/home.svg");
     width: 1.5rem;
     height: 1.5rem;
 }
 
-.sidebar .profile-icon {
+.profile-icon {
     background-image: url("img/icons/card-account-details.svg");
     width: 1.5rem;
     height: 1.5rem;
 }
 
-.sidebar .message-icon {
+.message-icon {
     background-image: url("img/icons/message.svg");
     width: 1.5rem;
     height: 1.5rem;
 }
 
-.sidebar .history-icon {
+.history-icon {
     background-image: url("img/icons/history.svg");
     width: 1.5rem;
     height: 1.5rem;
 }
 
-.sidebar .task-icon {
+.task-icon {
     background-image: url("img/icons/calendar-check.svg");
     width: 1.5rem;
     height: 1.5rem;
 }
 
-.sidebar .community-icon {
+.community-icon {
     background-image: url("img/icons/account-group.svg");
     width: 1.5rem;
     height: 1.5rem;
 }
 
-.sidebar .settings-icon {
+.settings-icon {
     background-image: url("img/icons/cog.svg");
     width: 1.5rem;
     height: 1.5rem;
 }
 
-.sidebar .support-icon {
+.support-icon {
     background-image: url("img/icons/face-agent.svg");
     width: 1.5rem;
     height: 1.5rem;
 }
 
-.sidebar .privacy-icon {
+.privacy-icon {
     background-image: url("img/icons/shield-check.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.bell-icon {
+    background-image: url("img/icons/bell-ring-outline.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.search-icon {
+    background-image: url("img/icons/magnify.svg");
     width: 1.5rem;
     height: 1.5rem;
 }
