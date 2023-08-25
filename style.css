@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Prism&display=swap');
+
 body {
     background-color: #e2e8f0;
     min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -49,7 +52,7 @@ body {
 }
 
 .top > .account {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.3rem;
 }
 
@@ -59,7 +62,7 @@ body {
     padding: 0 50px 0 50px;
     gap: 2rem;
     align-items: center;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.2rem;
 }
 
@@ -85,12 +88,12 @@ body {
 }
 
 .greetings > .text {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .greetings > .account {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* Main Section */
@@ -103,7 +106,7 @@ body {
 
 .main-section .title {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
@@ -119,12 +122,12 @@ body {
 }
 
 .announcements > .items .title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 3px;
 }
 
 .announcements > .items .text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: gray;
 }
 
@@ -168,11 +171,15 @@ body {
 .projects > .items > .item{
     background-color: white;
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: 1.5rem 3rem 1.5rem 1.5rem;
     display: grid;
     grid-template-rows: auto auto 1fr;
     box-shadow: 0 1px 5px 1px #b2b0b0;
     border-left: solid 8px #fbbf24;
+}
+
+.projects > .items .title {
+    font-size: 1.3rem;
 }
 
 .projects  .text{
@@ -180,6 +187,7 @@ body {
 }
 
 .icons {
+    margin-top: 2rem;
     place-self: end;
 }
 /* Sidebar */
@@ -192,7 +200,7 @@ body {
     color: white;
     font-size: 1.5rem;
     gap: 2rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .sidebar > .title {
