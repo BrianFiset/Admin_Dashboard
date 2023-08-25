@@ -151,6 +151,33 @@ body {
     height: 50px;
 }
 
+.projects .icons {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    gap: 1rem;
+}
+
+.projects > .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, max(200px, auto));
+    padding: 10px 2rem 2rem 0;
+    gap: 1rem;
+}
+
+.projects > .items > .item{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    box-shadow: 0 1px 5px 1px #b2b0b0;
+    border-left: solid 8px #fbbf24;
+}
+
+.icons {
+    place-self: end;
+}
 /* Sidebar */
 
 .sidebar {
@@ -264,6 +291,25 @@ body {
 
 .search-icon {
     background-image: url("img/icons/magnify.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.share-icon {
+    background-image: url("img/icons/share-variant-outline.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.fav-icon {
+    background-image: url("img/icons/star-outline.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+    grid-column: 2/3;
+}
+
+.view-icon {
+    background-image: url("img/icons/eye-outline.svg");
     width: 1.5rem;
     height: 1.5rem;
 }
