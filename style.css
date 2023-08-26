@@ -49,7 +49,7 @@ body {
     background-color: #0ea5e9;
     border-radius: 50%;
     width: 50px;
-    height: 50px;
+    height: 100%;
 }
 
 .top > .account {
@@ -112,7 +112,7 @@ body {
 .main-section {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    padding: 3rem 2rem;
+    padding: 3rem 2rem 0 2rem;
 }
 
 .main-section .title {
@@ -129,7 +129,11 @@ body {
     display: grid;
     gap: 1rem;
     box-shadow: 0 1px 5px 1px #b2b0b0;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 0px 0;
+}
+
+.announcements > .items {
+    margin-bottom: 20px;
 }
 
 .announcements > .items .title {
@@ -198,7 +202,7 @@ body {
 }
 
 .icons {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     place-self: end;
 }
 
